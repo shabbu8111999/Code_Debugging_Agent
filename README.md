@@ -39,6 +39,7 @@ Safe execution with skip-on-syntax-error logic.
 
 
 ## 🏗 Folder Structure
+
 Code_Debugging_Agent/
 │── agent/                  # Core agent logic
 │   ├── __init__.py
@@ -137,30 +138,40 @@ View diff and download the fixed file
 
 
 ## 📂 File Descriptions
-agent/
-File	Description
-agents.py	Main DebuggingAgent class, orchestrates executor + LLM chains
-chains.py	DebugChain handles analysis and fix prompts with LLM
-executor.py	Runs Python code safely and returns output/errors
-prompts.py	DEBUG_PROMPT & FIX_PROMPT templates for LLM
-tools.py	Syntax checker and safe executor with logging
-utils/
-File	Description
-logger.py	Logger setup for info/error messages
+
+### agent/
+
+File	        Description
+agents.py	    Main DebuggingAgent class, orchestrates executor + LLM chains
+chains.py	    DebugChain handles analysis and fix prompts with LLM
+executor.py	    Runs Python code safely and returns output/errors
+prompts.py	    DEBUG_PROMPT & FIX_PROMPT templates for LLM
+tools.py	    Syntax checker and safe executor with logging
+
+
+### utils/
+
+File	        Description
+logger.py	    Logger setup for info/error messages
 formatter.py	Helpers to format tracebacks, extract code blocks, and explain errors
-tests/
+
+
+### tests/
 
 Contains unit tests for agent, executor, and tools.
 
-examples/
+
+### examples/
 
 Contains small buggy code examples for testing/debugging.
 
-ui/
-File	Description
-app.py	Streamlit interface
-components.py	UI helpers like diff generator
-styles.css	Optional styling for Streamlit interface
+
+### ui/
+
+File	            Description
+app.py	            Streamlit interface
+components.py	    UI helpers like diff generator
+styles.css	        Optional styling for Streamlit interface
 
 
 
@@ -168,20 +179,24 @@ styles.css	Optional styling for Streamlit interface
 
 Example requirements.txt:
 
+
 ### Core LLM framework
 langchain
 langchain-core
 langchain-community
+
 
 ### Python execution & sandboxing
 asttokens
 execnet
 restrictedpython
 
+
 ### LLM Provider
 openai
 anthropic
 transformers
+
 
 ### Utilities
 rich
@@ -191,12 +206,14 @@ tenacity
 loguru
 click
 
+
 ### Testing & Dev
 pytest
 pytest-cov
 ruff
 mypy
 black
+
 
 ### UI Tools
 flask
@@ -255,11 +272,11 @@ Voice or multi-LLM suggestions
 
 ### 📚 References
 
-LangChain Documentation
+LangChain Documentation : https://docs.langchain.com/
 
-OpenAI API
+OpenAI API : https://platform.openai.com/docs/api-reference/introduction
 
-Streamlit Documentation
+Streamlit Documentation : https://docs.streamlit.io/
 
 
 
