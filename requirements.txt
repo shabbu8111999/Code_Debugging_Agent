@@ -1,0 +1,39 @@
+# Core LLM framework
+langchain
+langchain-community
+langchain-core
+langchain-openai
+
+# Python execution & sandboxing
+asttokens  # For working with AST + source mapping
+execnet   # For sandboxed code execution
+restrictedpython # Optional: restrict exec environment for safety
+
+# LLM Provider (choose one)
+openai    # If using OpenAI API
+anthropic   # If using Claude
+transformers  # If running local models
+
+# Utilities
+rich       # Better console output
+python-dotenv  # For API key management
+pydantic    # Data validation
+tenacity
+loguru
+click
+
+# Testing & Dev Tools
+pytest
+pytest-cov
+ruff
+mypy
+black
+
+# UI Tools
+flask
+flask-cors
+streamlit
+
+setuptools
+
+-e .
