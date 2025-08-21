@@ -168,10 +168,13 @@ Contains small buggy code examples for testing/debugging.
 
 ### ui/
 
-File	            Description
-app.py	            Streamlit interface
-components.py	    UI helpers like diff generator
-styles.css	        Optional styling for Streamlit interface
+File	       |     Description
+               |
+app.py	       |     Streamlit interface
+               |
+components.py  |     UI helpers like diff generator
+               |
+styles.css	   |     Optional styling for Streamlit interface
 
 
 
@@ -182,42 +185,59 @@ Example requirements.txt:
 
 ### Core LLM framework
 langchain
+
 langchain-core
+
 langchain-community
 
 
 ### Python execution & sandboxing
 asttokens
+
 execnet
+
 restrictedpython
 
 
 ### LLM Provider
 openai
+
 anthropic
+
 transformers
 
 
 ### Utilities
 rich
+
 python-dotenv
+
 pydantic
+
 tenacity
+
 loguru
+
 click
 
 
 ### Testing & Dev
 pytest
+
 pytest-cov
+
 ruff
+
 mypy
+
 black
 
 
 ### UI Tools
 flask
+
 flask-cors
+
 streamlit
 
 ## NOTE: Completely depend's on you which UI Tools should you want to use
